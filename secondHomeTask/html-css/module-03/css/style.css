@@ -136,6 +136,7 @@ img {
     cursor: pointer;
     border: 1px;
     border-color: black;
+    border-style: solid;
     background-color: #fff;
 }
 

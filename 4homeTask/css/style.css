@@ -1,11 +1,39 @@
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(../css/fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(../css/fonts/OpenSans/OpenSans-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "OpenSans-Semibold";
+    src: url(../css/fonts/OpenSans/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(../css/fonts/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(../css/fonts/OpenSans/OpenSans-Light.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  .header {
+
+.header {
     padding: 35px 0;
 }
+
 .main-menu,
 .section_inner {
     width: 1170px;
@@ -15,33 +43,42 @@
 
 .logo {
     display: inline-block;
+    line-height: 32px;
 }
+
+.logo img {
+    vertical-align: middle;
+}
+
 .site-menu {
     list-style: none;
     line-height: 32px;
     margin: 0;
     padding: 0;
     float: right;
-}  
+} 
+
 .clearfix::after {
     content: '';
     clear: both;
     display: block;
-  }  
+}
+
 .site-menu li {
     display: inline-block;
     vertical-align: middle;
     padding: 0 15px;
 }
+
 .site-menu li:last-child {
     margin-right: 0;
 }
+
 .site-menu a.link {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    font-family: Roboto;
-    font-weight: 700;
+    font-family: "OpenSans";
 }
 
 .site-menu a:hover {
@@ -53,9 +90,7 @@
 .section {
     padding: 65px 0 35px;
 }
-.section_inner {
-    padding: 0 30px;
-}
+
 .section_inner h1 {
     text-transform: uppercase;
     text-align: center;
@@ -63,7 +98,6 @@
     padding-bottom: 35px;
     font-size: 48px;
     font-family: 'Roboto-Black';
-    font-weight: 900;
     position: relative;
 }
 .section_inner h1::after {
@@ -93,8 +127,7 @@
     line-height: 40px;
     text-transform: uppercase;
     text-align: center;
-    font-family: Roboto;
-    font-weight: 600;
+    font-family: "Roboto-Black";
 }
 .section_inner span {
     float: right;
@@ -173,7 +206,7 @@
     text-align: center;
     padding-bottom: 32px;
     position: relative;
-    font-family: Roboto;
+    font-family: "Roboto-Black";
     font-weight: 900;
 
 }
@@ -203,8 +236,7 @@
 .gallery_item h2 {
     display: block;
     font-size: 18px;
-    font-family: 'Open Sans';
-    font-weight: 600;
+    font-family: "OpenSans-Semibold";
     padding-bottom: 11px;
     position: relative;
     line-height: 26px;
@@ -228,8 +260,7 @@
 }
 .page-footer .gallery_item p {
     font-size: 14px;
-    font-family: 'Open Sans';
-    font-weight: 400;
+    font-family: 'OpenSans';
     color: #000;
     line-height: 26px;
     margin-top: 15px;
@@ -238,7 +269,7 @@
     padding: 0;
 }
 .page-footer button {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'OpenSans-Light';
     font-size: 16px;
     height: 51px;
     width: 160px;

@@ -6,26 +6,18 @@ html {
 *::before, 
 *::after {
     box-sizing: inherit;
-}
-
-body {
     margin: 0;
 }
 
 img {
     width: 420px;
     height: 280px;
-    margin: 0 0 30px 0;
     padding: 0;
 }
 
 .container {
     width: 900px;
     margin: 0 auto;
-}
-
-.page-header {
-    background-color: #fff;
 }
 
 .page-nav {
@@ -36,7 +28,6 @@ img {
 .site-navigation {
     display: inline-block;
     vertical-align: middle;
-
     width: 900px;
     margin: 0;
     padding: 0;
@@ -62,22 +53,22 @@ img {
 }
 
 .site-navigation li a {
-    display: inline-block;
     text-decoration: none; 
     color: rgba(25, 102, 92, 0.788);
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
-    color: crimson;
+.site-navigation a:hover {
+    color: #25b4f5;
 }
 
-/* div parts */
-
-.first-part,
-.second-part {
-    margin-bottom: 138px;
+.bottom {
+    margin-bottom: 134px;
 }
+
+.space {
+    margin-bottom: 54px;
+}
+
 /* feature */
 
 .feature-section {
@@ -104,10 +95,13 @@ img {
     font-size: 30px;
 }
 
-.feature-article p {
-    margin: 0;
+.feature-article p  {
     font-size: 14px;
     text-align: justify;
+}
+
+.feature-article .single {
+    padding: 32px 0 25px 0;
 }
 
 /* footer */
@@ -119,7 +113,7 @@ img {
 .button {
     display: inline-block;
     padding:21px 34px 22px 34px;
-    margin: 54px 0px 70px 0px;
+    margin-bottom: 70px;
     font-size: 20px;
     line-height: 21px;
     cursor: pointer;
@@ -128,8 +122,4 @@ img {
     border-style: solid;
     border-width: 1px;
     background-color: #fff;
-}
-
-.button:hover {
-    color: brown;
 }

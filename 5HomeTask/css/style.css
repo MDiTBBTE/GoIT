@@ -70,7 +70,7 @@ a:hover {
     color: #000;
     transition-duration: .4s;
 }
-
+/* header */
 .first {
     background-image: url(../image/group.jpg);
     background-size: cover;
@@ -95,12 +95,12 @@ a:hover {
  }
 
  .moving-gallery h1 {
-     display: inline-block;
     text-transform: uppercase;
     color: #fff;
+    line-height: 60px;
     font-size: 60px;
     font-family: "Roboto-Black";
-    padding: 18px 0;
+    padding: 0 0 15px 0;
 }
 
 .slider--menu {
@@ -110,14 +110,11 @@ a:hover {
 }
 
 .moving-gallery p {
-    display: inline-block;
-    font-size: 18px;
+    font-size: 24px;
     font-family: "Roboto-Light";
     text-transform: uppercase;
     color: #fff;
     margin: 0 auto;
-    text-align: left;
-    padding: 18px 0;
     text-align: left;
 }
 
@@ -154,7 +151,7 @@ a:hover {
     transform-origin: center;
     transform: translateY(-50%) rotate(180deg);
 }
-
+/* second section */
 .second {
     padding: 92px 0 80px;
     background-color: #e9f0fd;
@@ -184,6 +181,7 @@ a:hover {
 }
 
 .gallery {
+    width: 1170px;
     margin-top: 80px;
     font-size: 0;
 }
@@ -198,7 +196,7 @@ a:hover {
     margin-right: 30px;
 }
 
-.part p {
+.inner__part {
     content: "";
     width: 255px;
     height: 41px;
@@ -212,7 +210,7 @@ a:hover {
     bottom: 0;
     cursor: pointer;
     background-color: #323232;
-    transition-duration: .7s;
+    transition: background .7s ease-in-out;
 }
 
 .part span.price {
@@ -226,9 +224,20 @@ a:hover {
     line-height: 41px;
     text-align: center;
     background-color: #8c8c8c;
-    transition-duration: .7s;
+    transition: background .7s ease-in-out;
 }
 
+.part:hover .overlay {
+    opacity: 0.549;
+} 
+
+.part:hover .inner__part {
+    background: #1abc9c;
+}
+
+.part:hover span.price {
+    background: #7fd9c7;
+}
 .overlay{
     border-width: 10px;
     border-color: rgb(255, 255, 255);
@@ -236,59 +245,91 @@ a:hover {
     background-color: rgb(0, 0, 0);
     opacity: 0;
     position: absolute;
-    width: 257px;
+    width: 255px;
     height: 281px;
     z-index: 2;
-    transition-duration: .7s;
+    transition: opacity .7s ease-in-out;
+}
+/* меню свойств */
+
+.inner__overlay {
+    width: 255px;
+    height: 322px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity .7s ease-in-out;
+}
+
+.d__img {
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-.overlay::before {
-    content: '';
-    width: 166px;
-    height: 107px;
-    background-image: url(../image/heart.png),
-                         url(../image/arrows.png),
-                         url(../image/clock.png),
-                         url(../image/bucket.png);
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
-    background-position: 0px 0, 57px 0, 116px 0, 0 57px ;
-    border: #1abc9c;
-    position: absolute;
-    z-index: 5;
+    border: 1px solid #fff;
+    transition: background 0.4s ease-in-out,
+        border-color 0.4s ease-in-out; 
+    cursor: pointer;
 }
 
-.part:hover .overlay {
-    opacity: 0.549;
-} 
+.wrap {
+    width: 166px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}   
 
-.inner__item:last-of-type {
+.wrap:nth-child(3) {
     margin-right: 0;
 }
 
-.inner__item:hover,
-.self:hover {
-    background-color: #1abc9c;
-    border-color: #1abc9c;
-    transition-duration: .7s;
+.inner__overlay .single {
+    width: 166px;
+    height: 50px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin-top: 8px;
+    transition: background 0.7s ease-in-out,
+        border-color 0.7s ease-in-out; 
+    cursor: pointer;
 }
 
-.part:hover p {
-    background-color: #1abc9c;
+.single .inner__single {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
-.part:hover span.price {
-    background-color: #7fd9c7;
+.inner__overlay:hover {
+    opacity: 1;
 }
+
+.d__img:hover {
+    background: #1abc9c;
+    border-color: transparent;
+}
+
+.single:hover {
+    border-color: transparent;
+    background: #323232;
+}
+
 
 .img {
     width: 100%;
     height: 322px;
     object-fit: cover;
 }
+
+/* footer */
 
 .footer {
     display: flex;

@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+.container {
+  width: 320px;
+  height: 540px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.navigation {
+  height: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+}
+
+.menu__information {
+  height: 315px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.button {
+  color: #fff;
+  background: none;
+  border: none;
+  padding: 7px 18px;
+  transition: border .3s ease-in;
+  font-size: 14px;
+  margin: 20px 5px;
+  border-radius: 20px;
+}
+
+.button:hover {
+  border: 2px solid #fff;
+}
+
+.finder {
+  border-radius: 20px;
+  background: #ff4e50;
+  border: none;
+  color: #fff;
+  width: 280px;
+  margin-top: 30px;
+  line-height: 40px;
+}
+
+/* section */
+.category {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card__header {
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+.picture__wrapper {
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+.icon-wrapper {
+  position: absolute;
+  bottom: -12px;
+  right: 3px;
+}
+
+.face {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 122px;
+  height: 122px;
+}
+
+.icon {
+  height: 36px;
+  width: 37px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: none;
+}
+
+.red {
+  background: #ff4e50;
+}
+
+.yellow {
+  background: #ffa507;
+}
+
+.lightgreen {
+  background: #1cd7ad;
+}
+
+.blue {
+  background: #4e73db;
+}
+
+
+.face {
+  display: block;
+}
+
+.other {
+  border-radius: 20px;
+  line-height: 40px;
+  margin: 30px 0 50px;
+  background: transparent;
+  border: 3px solid #ff4e50;
+  color: #ff4e50;
+}

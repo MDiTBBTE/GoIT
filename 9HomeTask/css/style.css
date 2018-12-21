@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../css/fonts/monsterrat/Montserrat-Bold.ttf)
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../css/fonts/roboto/Roboto-Light.ttf);
+}
+
+body {
+  font-family: "Montserrat-Bold";
+}
+
+.first_screen {
+  background-image: url(../img/couple-m.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 540px;
+}
+
+.nav {
+  height: 215px;
+  justify-content: space-between;
+}
+
+.home {
+  font-size: 1.25em;
+  color: #fff;
+}
+
+.home:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.but {
+  background: transparent;
+  border: 3px solid transparent;
+  color: #fff;
+  border-radius: 25px;
+  padding: 0.63rem 1.06rem;
+  font-size: 0.875em;
+  transition: border .3s ease-in-out;
+}
+
+.but:hover,
+.but:active,
+.but:focus {
+  outline: none;
+  cursor: pointer;
+  border-color: #fff;
+}
+
+.inner_cover {
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.tittle {
+  font-size: 1.875em;
+}
+
+.subtitle {
+  font-family: "Roboto-Light";
+  font-size: 1.125em;
+}
+
+.search {
+  border-radius: 20px;
+  background-color: #ff4e50;
+  border: none;
+  line-height: 2.5rem;
+  padding: 0 1.375rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search:hover,
+.search:active,
+.search:focus {
+  outline: none;
+}
+
+.section_title {
+  font-size: 1.475rem;
+  padding: 4.125rem 0 0.9em 0;
+}
+
+.picture {
+  border-radius: 50%;
+  transition: all .2s ease-in;
+}
+
+.face:hover .picture {
+  transform: scale(1.05);
+}
+
+.face {
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery_item h3, p {
+  font-size: 0.875em;
+}
+
+.gallery_item h3 {
+  padding: .7em 0;
+}
+
+.gallery_item p {
+  font-family: "Roboto-Light";
+}
+
+.icon {
+  position: absolute;
+  bottom: -6px;
+  right: 36%;
+}
+
+.sign {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.rb {
+  background: #ff4e50;
+}
+
+.gb {
+  background: #1cd7ad;
+}
+
+.yb {
+  background: #ffa507;
+}
+
+.bb {
+  background: #4e73db;
+}
+
+.gallery_but {
+  background: transparent;
+  border: 3px solid #ff4e50;
+  border-radius: 25px;
+  margin: 1.7rem 0 3.5rem;
+  padding: 0.75rem 1.69rem;
+  font-size: 0.875em;
+  color: #ff4e50;
+  cursor: pointer;
+}
+
+.gallery_but:hover,
+.gallery_but:active,
+.gallery_but:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .first_screen {
+    background-image: url(../img/couple-t.jpg);
+    height: 700px;
+  }
+
+  .nav {
+    height: 110px;
+  }
+ 
+  .inner_cover {
+    margin-top: 6.9rem;
+  }
+  
+  .tittle {
+    font-size: 3.25rem;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+  }
+
+  .icon {
+    bottom: -3px;
+    right: 24%;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .first_screen {
+    background-image: url(../img/couple-d.jpg);
+  }
+
+  .icon {
+    bottom: -2px;
+    right: 21%;
+  }
+}

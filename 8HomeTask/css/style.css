@@ -18,7 +18,10 @@
 
 /* header */
 .container {
-  max-width: 100%;
+  background-image: url(../img/couple-m.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 540px;
 }
 
@@ -51,19 +54,7 @@
   cursor: pointer;
 }
 
-.background img,
-.fon__inner {
-  width: 100%;
-  height: 540px;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
 .menu__information {
-  height: 315px;
   margin-top: 8.375%;
   padding: 0 3%;
   display: flex;
@@ -107,7 +98,7 @@
   background: #ff4e50;
   border: none;
   color: #fff;
-  width: 65.5%;
+  width: 238px;
   margin-top: 30px;
   transition: all .2s ease-in;
   font-size: 0.875em;
@@ -226,19 +217,17 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 90%;
-    margin: 0 auto;
+    background-image: url(../img/couple-t.jpg);
     height: 700px;
   }
-  
+
   .header {
-    min-height: auto;
-    padding: 5.7575% auto 35.3030%;
+    width: 90%;
+    margin: 0 auto;
   }
   
   .navigation {
     width: 100%;
-    height: 36px;
     padding-top: 4.0217%;
     flex-direction: row;
     align-items: center;
@@ -325,7 +314,11 @@
 }
 
 @media screen and (min-width: 940px) {
-  .container,
+  .container {
+    background-image: url(../img/couple-d.jpg);
+  }
+
+  .header,
   .category {
     width: 70%;
     margin: 0 auto;
@@ -333,8 +326,7 @@
   
   .navigation {
     width: 100%;
-    height: 36px;
-    margin: 4.6875% 0 15.4255% 0;
+    margin: 2.1% 0 7.4255% 0;
     padding: 0;
     flex-direction: row;
     align-items: center;
@@ -345,7 +337,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    width: 24.4242%;
+    width: 20%;
     padding: 0;
   }
   

@@ -143,7 +143,7 @@ font-family: "Montserrat-Regular";
 .section__02 {
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .section__02-inner {
@@ -174,7 +174,6 @@ font-family: "Montserrat-Regular";
 .form {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
 }
 
 .form__left {
@@ -222,7 +221,7 @@ font-family: "Montserrat-Regular";
   text-align: center;
   margin: 0 auto;
   line-height: 66px;
-  margin: 65px 0 65px 0;
+  margin: 40px 0;
   background-color: #fed136;
   cursor: pointer;
   color: #fff;

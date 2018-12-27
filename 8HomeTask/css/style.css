@@ -81,7 +81,7 @@
   margin: 20px 5px;
   line-height: 40px;
   color: #fff;
-  border-color: transparent;
+  border: 3px solid transparent;
   border-radius: 20px;
   transition: all .4s ease-in-out;
 }
@@ -89,7 +89,7 @@
 .button:hover,
 .button:focus,
 .button:active {
-  border: 2px solid #fff;
+  border-color: #fff;
   outline: none;
 }
 

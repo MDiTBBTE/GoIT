@@ -31,6 +31,7 @@
   content: "";
   background: url("../image/background_eagle.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: top center;
   width: 100%;
   height: 100%;
@@ -43,7 +44,7 @@
 .header-inner {
   width: 1200px;
   margin: 0 auto;
-  padding: 40px 15px 0 15px;
+  padding: 20px 15px 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,7 +138,7 @@
   font-family: 'KaushanScript-Regular';
   font-size: 4.5rem;
   margin-bottom: 15px;
-  line-height: 130px;
+  line-height: 110px;
 }
 
 .header-wrapper__invite {
